@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-gosh-dev-144312-authRole",
+            "UnauthRoleArn": "arn:aws:iam::064860103194:role/amplify-gosh-dev-144312-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::064860103194:role/amplify-gosh-dev-144312-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-gosh-dev-144312-deployment",
+            "UnauthRoleName": "amplify-gosh-dev-144312-unauthRole",
+            "StackName": "amplify-gosh-dev-144312",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:064860103194:stack/amplify-gosh-dev-144312/201e29e0-c4d4-11ea-8144-065c8b35d570",
+            "AmplifyAppId": "d2e9rztyp06qde"
+        },
+        "categories": {
+            "auth": {
+                "goshc4274fb9": {}
+            }
+        }
+    }
+}

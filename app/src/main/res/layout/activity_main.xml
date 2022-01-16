@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven"
+        android:text="MedReader"
+        android:textColor="#ffffff"
+
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="@+id/medreader_logo"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="Medicine Label Reader"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.225" />
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="230dp"
+        android:layout_height="152dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_android_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.114" />
+
+
+    <ImageView
+        android:id="@+id/medreader_logo"
+        android:layout_width="171dp"
+        android:layout_height="133dp"
+        android:src="@drawable/logoonly"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <Button
+        android:id="@+id/replay_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/replay_button1"
+        android:fontFamily="@font/ubuntu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+
+        android:layout_marginStart="48dp"
+
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/my_meds_button"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upload_image_btn"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capture_image_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/upload_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+
+        android:background="@drawable/record_use_button"
+        android:fontFamily="@font/ubuntu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replay_image_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/capture_image_btn"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/take_pic"
+        android:fontFamily="@font/ubuntu"
+
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/replay_image_btn"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+    <Button
+        android:id="@+id/show_tutor_btn"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+
+        android:fontFamily="@font/ubuntu"
+        android:text="show tutor"
+        app:layout_constraintTop_toBottomOf="@+id/reset_tutor_btn"
+        tools:layout_editor_absoluteX="0dp" />
+<!--> Reset Tutorial Button
+    <Button
+        android:id="@+id/reset_tutor_btn"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+
+        android:fontFamily="@font/ubuntu"
+        android:text="reset tutor"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="16dp" />
+        <!-->
+</androidx.constraintlayout.widget.ConstraintLayout>

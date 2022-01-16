@@ -1,0 +1,33 @@
+{
+	"auth": {
+		"goshc4274fb9": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"predictions": {
+		"translateText6d93cb1c": {
+			"providerPlugin": "awscloudformation",
+			"service": "Translate",
+			"convertType": "translateText"
+		},
+		"identifyTextb3a1096b": {
+			"providerPlugin": "awscloudformation",
+			"service": "RekognitionAndTextract",
+			"dependsOn": [],
+			"identifyType": "identifyText"
+		},
+		"speechGenerator1690033c": {
+			"providerPlugin": "awscloudformation",
+			"service": "Polly",
+			"convertType": "speechGenerator"
+		},
+		"identifyEntities42db97b4": {
+			"providerPlugin": "awscloudformation",
+			"service": "Rekognition",
+			"dependsOn": [],
+			"identifyType": "identifyEntities"
+		}
+	}
+}
